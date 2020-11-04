@@ -1,8 +1,9 @@
 
 import pandas, numpy, uuid, os, random, sys
+from tqdm import tqdm
 from multiprocessing import Process, Pool
 from matplotlib import pyplot
-from src.models import adversarial
+from models import adversarial
 
 
 def run_parallel(grid):
@@ -90,7 +91,7 @@ if __name__ == "__main__":
     path = '/Users/andreidm/ETH/projects/normalization/data/'
     grid = pandas.read_csv(path + name, index_col=0)
 
-    for i in range(grid.shape[0]):
+    for i in tqdm(range(grid.shape[0])):
         parameters = dict(grid.iloc[i, :])
         adversarial.main(parameters)
 
