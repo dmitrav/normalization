@@ -1,10 +1,10 @@
-# RALPS
+# Regularized adversarial learning for normalization of multi-batch untargeted metabolomics data
 RALPS stands for Regularized Adversarial Learning Preserving Similarity.
 It's a novel method for eliminating batch effects in omics data, developed originally to harmonize distant-in-time multi-batch flow-injection mass-spectrometry measurements.
 
 <img src="https://github.com/dmitrav/normalization/blob/master/schematic/figure.png" alt="RALPS" width="600"/>
 
-I've been working towards publishing it.
+Published in [Bioinformatics](https://academic.oup.com/bioinformatics/article/39/3/btad096/7056639).
 
 ## Requirements
 ```
